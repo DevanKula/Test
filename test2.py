@@ -14,6 +14,6 @@ for line in in_file:
     if car_tuple[4] == 'in\n':
         print("{} - {:12} ({:25}".format(car_tuple[0], car_tuple[1],car_tuple[2]),'){:>40}{:,.2f}{}'.format(DOLLAR_EQUALS_SIGN,car_tuple[3], car_tuple[4].strip().replace('out','*').replace('in',' ')))
         hire_choice = (input("Enter: "))
-        for i in str(items_list[5]):
+        for i in str(car_tuple[0]):
             if hire_choice == '1':
                 print('{} hired for {}{:<5,.2f}'.format(car_tuple[2], DOLLAR_EQUALS_SIGN.replace('=', ' '), car_tuple[3]))
