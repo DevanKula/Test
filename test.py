@@ -17,5 +17,6 @@ while choice != 'Q':
         elif choice == 'H':
             if car_tuple[4] == 'in\n':
                 print("{} - {:12} ({:25}".format(car_tuple[0], car_tuple[1],car_tuple[2]),'){:>40}{:,.2f}{}'.format(DOLLAR_EQUALS_SIGN,car_tuple[3], car_tuple[4].strip().replace('out','*').replace('in',' ')))
-            print("Enter the number of an item to hire")
+        print("Enter the number of an item to hire")
+        hire_choice = input()
     choice = input(">>>").upper()
