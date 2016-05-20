@@ -9,6 +9,7 @@ while choice != 'Q':
         items_list = line.split(',')
         items_list.append(items_list[-1])
         items_list.append(counter)
+        # creating car tuple
         car_tuple = (items_list[5],items_list[0], items_list[1], float(items_list[2]),items_list[3])
         items_list.append(car_tuple)
         if choice == "L":
@@ -20,3 +21,5 @@ while choice != 'Q':
         #print("Enter the number of an item to hire")
         #hire_choice = input()
     choice = input(">>>").upper()
+print('Goodbye!')
+#Bro just making a comment here :)
